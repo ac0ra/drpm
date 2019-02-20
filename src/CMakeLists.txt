@@ -26,6 +26,9 @@ set_target_properties(drpm PROPERTIES
    SOVERSION ${DRPM_SOVERSION}
 )
 
+MESSAGE( status "library path = ${LIB_INSTALL_DIR}")
+MESSAGE( status "include path = ${INCLUDE_INSTALL_DIR}")
+
 install(TARGETS drpm DESTINATION ${LIB_INSTALL_DIR} LIBRARY DESTINATION
     ${LIB_INSTALL_DIR})
 install(FILES drpm.h DESTINATION ${INCLUDE_INSTALL_DIR})
